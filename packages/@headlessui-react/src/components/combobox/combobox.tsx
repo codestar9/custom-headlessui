@@ -952,7 +952,7 @@ function InputFn<
 
       case Keys.Tab:
         isTyping.current = false
-        if (data.comboboxState !== ComboboxState.Open) return
+        // if (data.comboboxState !== ComboboxState.Open) return
         if (data.mode === ValueMode.Single) actions.selectActiveOption()
         actions.closeCombobox()
         break
